@@ -1,14 +1,26 @@
-#img {
-  display: block;
-  margin: auto;
-  height: 128px;
-  width: 128px;
-  padding: 2rem;
+.mult{
+  width: 4rem;
+  height: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
-
-#canvas {
-  display: block;
-  margin: 2rem auto;
-  width: 540px;
-  height: 540px;
+.result{
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; 
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+table,td{
+  border:1px solid black;
+}
+table{
+  border-collapse:collapse;  
+  margin-bottom: 2rem;
 }
