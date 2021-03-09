@@ -1,13 +1,12 @@
-const init = ()=> {
+const init = () => {
   for (let i = 1; i < 11; i++) {
     let table = document.createElement('table');
     createMultiplicationTable(i, table);
     document.body.appendChild(table);
   }
-}
+};
 
-
-const createMultiplicationTable= (num, table) =>{
+const createMultiplicationTable = (num, table) => {
   let tbody = document.createElement('tbody');
   for (let i = 1; i < 11; i++) {
     let tr = document.createElement('tr');
@@ -16,13 +15,12 @@ const createMultiplicationTable= (num, table) =>{
     tbody.appendChild(tr);
   }
   return table.appendChild(tbody);
-}
-
+};
 
 const createTd = (content, classToAdd) => {
   let td = document.createElement('td');
   td.textContent = content;
-  td.classList.add('result');
+  td.classList.add(classToAdd);
   return td;
 };
 
